@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <style>
+  .function-item{
+    margin-top: 30px;
+  }
+</style>
+</head>
+<body>
+  <div class="content" style="padding: 20px 15px;">
+  
+
+    <div style="margin-top: 20px" id="function-box">
+    <div class="function-item" id="mintBox">
+    <div class="mb-3">
+          <label for="mint_account" class="form-label">增发到哪个地址</label>
+          <input type="text" class="form-control" id="mint_account" placeholder="address" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="mint_id" class="form-label">id（1 黑土地，2 红土地，3 黄土地，4 狐狸，5 狗，6 熊，7 枪，8 九尾狐，9 哮天犬，10 超级熊， 11 超级枪）</label>
+          <input type="number" class="form-control" id="mint_id" placeholder="uint256" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="mint_amount" class="form-label">数量</label>
+          <input type="number" class="form-control" id="mint_amount" placeholder="uint256" aria-describedby="emailHelp">
+        </div>
+        
+    <div class="d-grid gap-2">
+         <button class="btn btn-primary" onclick="App.mint()" type="button">mint</button>
+       </div>
+    </div>
+    </div>
+  </div>
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/web3.min.js"></script>
+<script src="./js/bignumber.min.js"></script>
+<script src="./dapp.js"></script>
+</html>
